@@ -44,8 +44,8 @@
 			<ul class="nav navbar-nav" id="mainNav">
 			  <li class="active"><a href="#header" class="scroll-link">Home</a></li>
 			  <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
+        <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li> 
 			  <li><a href="#service" class="scroll-link">My Skills</a></li>
-			  <li><a href="#Portfolio" class="scroll-link">Portfolio</a></li> 
 			  <li><a href="#experience" class="scroll-link">Experience</a></li> 
 			  <li><a href="#contact" class="scroll-link">Contact</a></li>
 			</ul>
@@ -60,22 +60,18 @@
 <div class="inner_wrapper about-us aboutUs-container fadeInLeft animated wow">
   <div class="container">
     <h2>About Me</h2>
-	<h6>A persone who loves Nature and It's creations</h6>
+	<h6>Someone who relishes the challenges of robotics, indulges in snowsports, and adores my charming cat, Coco.</h6>
     <div class="inner_section">
  <div class="row">
-      <div class="col-md-6"> <img class="img-responsive" src="img/SittingOnRobot.jpg" align=""> </div>
+      <!-- <div class="col-md-6"> <img class="img-responsive" src="img/SittingOnRobot.jpg" align=""> </div> -->
+      <!-- <div class="col-md-6"> -->
+        <div class="col-md-6"><img id="slideshow-image" src="img/SittingOnRobot.jpg" alt="Image 1"></div>
+        <!-- Include JavaScript for the automatic slideshow -->
+        <script src="js/ImageSlider.js"></script>
+      <!-- </div> -->
+    
       <div class="col-md-6">
-        <h3>My Passion</h3>
-        <p>Lorem ipsum dolor sit amet, quo meis voluptaria, erant bonorum albucius et per, ei placerat eu, te eos porro veniam. An everti maiorum detracto mea. Eu eos dicam voluptaria, erant bonorum albucius et per, ei sapientem accommodare est. Saepe dolorum constituam ei vel. Te sit malorum ceteros repudiandae, ne tritani adipisci vis.</p> 
-         
-        <p>Lorem ipsum dolor sit amet, voluptaria, erant bonorum albucius et per, ei meis audire placerat eu, te eos porro veniam. An everti maiorum detracto mea. Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum gravida tortor orci ipsum gravida tortor. 
-									</p>
-
-									<ul class="about-us-list">
-										<li class="points">Consectetur Morbi sagittis, sem quisci ipsum gravida tortor</li> 
-                                        <li class="points">Sagittis, sem quis lacinia faucibus, orci ipsum gravida </li>
-										<li class="points">Ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci</li>
-									</ul><!-- /.about-us-list -->
+        <h4>Hello there! I'm Oliver, a passionate robotics engineer with a knack for creating innovative solutions in the world of automation and artificial intelligence. When I'm not immersed in the fascinating realm of robotics, you'll often find me embracing the crisp mountain air, carving through fresh powder on skis or a snowboard. I have a deep love for snowsports, and the mountains have always been my happy place. And in the cozy corners of my life, there's a mischievous and adorable feline companion named Coco, who adds that extra touch of warmth and playfulness to my days.</h4> 
 								 
       </div>
     </div>
@@ -85,6 +81,216 @@
 </section>
 <!--Aboutus--> 
 
+<!-- Portfolio -->
+<section id="Portfolio" class="content"> 
+  
+  <!-- Container -->
+  <div class="container portfolio_title"> 
+    
+    <!-- Title -->
+    <div class="section-title">
+      <h2>Project Portfolio</h2>
+	<!-- <h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6> -->
+	  
+    </div>
+    <!--/Title --> 
+    
+  </div>
+  <!-- Container -->
+  
+  <div class="portfolio-top"></div>
+  
+  <!-- Portfolio Filters -->
+  <div class="portfolio"> 
+    
+    <div id="filters" class="sixteen columns">
+      <ul class="clearfix">
+        <li><a id="all" href="#" data-filter="*" class="active">
+          <h5>All</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".pathplanning">
+          <h5>Path Planning</h5>
+          </a></li> 
+        <li><a class="" href="#" data-filter=".computer-vision">
+          <h5>Computer Vision</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".sensor-fusion">
+          <h5>Sensor Fusion</h5>
+          </a></li>
+        <li><a class="" href="#" data-filter=".embedded">
+          <h5>Embedded</h5>
+          </a></li>
+        
+      </ul>
+    </div>
+    <!--/Portfolio Filters --> 
+    
+    <!-- Portfolio Wrapper -->
+    <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 337px;" id="portfolio_wrapper">  
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   pathplanning isotope-item effect-oscar">
+	   
+        <div class="portfolio_img"> 
+          <video width="100%" height="auto" autoplay muted loop>
+            <source src="video/RRT_star.mp4" type="video/mp4" alt="Portfolio 1">
+          Your browser does not support the video tag.
+          </video>  </div> 
+			<figcaption>		
+				<div>
+					<h2><span>Quadrotor Pathplanning</span></h2>
+							<p style="text-align:left;"><b>RRT* with minimum snap trajectory optimization.</b><br />
+                <b>Custom built Blender simulator.</b>
+                <br /> 
+                <br /> 
+              </p>
+
+              <a href="video/RRT_star.mp4" target="_blank"> <p style="text-align:left;"><u>Play video in new tab</u></p></a>
+              <a href="video/RRT_star.mp4" target="_blank"> <p style="text-align:left;"><u>Github Repository</u></p></a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item-->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  pathplanning isotope-item effect-oscar">
+        <div class="portfolio_img"> 
+          <video width="100%" height="auto" autoplay muted loop>
+            <source src="video/mpc.mp4" type="video/mp4" alt="Portfolio 1">
+          Your browser does not support the video tag.
+          </video>  </div> 
+			<figcaption>		
+				<div>
+					<h2><span>Model Predictive Control</span></h2>
+							<p style="text-align:left;"><b>Film target in front while avoiding obstacle</b><br/>
+                <b>Blue: drone</b><br/>
+                <b>Yello: target to film</b><br/>
+                <b>Red: obstacle</b><br/>
+                <br/>
+              </p>
+
+              <a href="video/mpc.mp4" target="_blank"> <p style="text-align:left;"><u>Play video in new tab</u></p></a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  pathplanning  isotope-item effect-oscar">
+        <div class="portfolio_img"> 
+          <video width="100%" height="auto" autoplay muted loop>
+            <source src="video/mapf.mp4" type="video/mp4" alt="Portfolio 1">
+          Your browser does not support the video tag.
+          </video>  </div> 
+			<figcaption>		
+				<div>
+					<h2><span>Multi-agent Planplanning</span></h2>
+							<p style="text-align:left;"><b>Plan collision free paths for multiple agents</b><br/>
+                <b>Cells with bold number: agent current position</b><br/>
+                <b>Cells with italic number: agent goal position</b><br/>
+                <br/>
+                <br/>
+              </p>
+              <a href="video/mapf.mp4" target="_blank"> <p style="text-align:left;"><u>Play video in new tab</u></p></a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item--> 
+      
+      <!-- Portfolio Item-->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  sensor-fusion  nature web isotope-item effect-oscar">
+        <div class="portfolio_img"> 
+          <video width="100%" height="auto" autoplay muted loop>
+            <source src="video/imu.mp4" type="video/mp4" alt="Portfolio 1">
+          Your browser does not support the video tag.
+          </video>  </div> 
+			<figcaption>		
+				<div>
+					<h2><span>IMU Attitude Estimation</span></h2>
+							<p style="text-align:left;"><b>6-DoF IMU Attitude Estimation with:</b><br/>
+                <b>Complementary filter</b><br/>
+                <b>Madgwick filter</b><br/>
+                <b>Uncented Kalman filter(UKF)</b><br/>
+                <b>Compared against Vicon groundtruth</b><br/>
+              </p>
+              <a href="video/imu.mp4" target="_blank"> <p style="text-align:left;"><u>Play video in new tab</u></p></a>
+				</div>
+			</figcaption>
+        </figure>
+      <!-- Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  computer-vision isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
+       <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic5.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2>
+							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  sensor-fusion isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
+       <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic6.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2>
+							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  </a>
+				</div>
+			</figcaption>
+      </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item  -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  sensor-fusion isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>       
+       <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic7.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2>
+							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  </a>
+				</div>
+			</figcaption>
+       </figure>
+      <!--/Portfolio Item --> 
+      
+      <!-- Portfolio Item -->
+      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   embedded isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>       
+      <figcaption>		
+				<div>
+				  <a href="img/portfolio_pic8.jpg" class="fancybox"> 
+					<h2>Warm <span>Oscar</span></h2>
+							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+				  </a>
+				</div>
+			</figcaption>
+        </figure>
+      <!--/Portfolio Item --> 
+      
+    </div>
+    <!--/Portfolio Wrapper --> 
+    
+  </div>
+  <!--/Portfolio Filters -->
+  
+  <div class="portfolio_btm"></div>
+  
+  
+  <div id="project_container">
+    <div class="clear"></div>
+    <div id="project_data"></div>
+  </div>
+ 
+  
+</section>
+<!--/Portfolio --> 
 
 <!--Service-->
 <section  id="service">
@@ -185,182 +391,7 @@ Lorem Ipsum is simply dummy text of the printing and typesetting industry. um do
 <div>
 </section>
 
-<!-- Portfolio -->
-<section id="Portfolio" class="content"> 
-  
-  <!-- Container -->
-  <div class="container portfolio_title"> 
-    
-    <!-- Title -->
-    <div class="section-title">
-      <h2>Portfolio</h2>
-	<h6>Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quisci ipsum</h6>
-	  
-    </div>
-    <!--/Title --> 
-    
-  </div>
-  <!-- Container -->
-  
-  <div class="portfolio-top"></div>
-  
-  <!-- Portfolio Filters -->
-  <div class="portfolio"> 
-    
-    <div id="filters" class="sixteen columns">
-      <ul class="clearfix">
-        <li><a id="all" href="#" data-filter="*" class="active">
-          <h5>All</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".nature">
-          <h5>Designing</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".wildlife">
-          <h5>Development</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".citylife">
-          <h5>Web App</h5>
-          </a></li>
-        <li><a class="" href="#" data-filter=".animals">
-          <h5>Mobile App</h5>
-          </a></li> 
-      </ul>
-    </div>
-    <!--/Portfolio Filters --> 
-    
-    <!-- Portfolio Wrapper -->
-    <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">  
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   animals isotope-item effect-oscar">
-	   
-        <div class="portfolio_img"> 
-		<img src="img/TestGif.gif"  alt="Portfolio 1"> </div> 
-			<figcaption>		
-				<div>
-				  <a href="img/TestGif.gif" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  wildlife isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/TestGif.gif" alt="Portfolio 1"> </div>
-        	<figcaption>		
-				<div>
-				  <a href="img/TestGif.gif" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  wildlife  isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 1"> </div>
-       <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic3.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item--> 
-      
-      <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  citylife  nature web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 1"> </div>
-         <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic4.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!-- Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  wildlife isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 1"> </div>
-       <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic5.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 1"> </div>
-       <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic6.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item  -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four  wildlife web isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 1"> </div>       
-       <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic7.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-       </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four   citylife isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 1"> </div>       
-      <figcaption>		
-				<div>
-				  <a href="img/portfolio_pic8.jpg" class="fancybox"> 
-					<h2>Warm <span>Oscar</span></h2>
-							<p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item --> 
-      
-    </div>
-    <!--/Portfolio Wrapper --> 
-    
-  </div>
-  <!--/Portfolio Filters -->
-  
-  <div class="portfolio_btm"></div>
-  
-  
-  <div id="project_container">
-    <div class="clear"></div>
-    <div id="project_data"></div>
-  </div>
- 
-  
-</section>
-<!--/Portfolio --> 
+
 <section id="experience">
 <div class="container">
     <section id="news" class="white-bg padding-top-bottom">
