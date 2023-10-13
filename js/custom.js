@@ -83,13 +83,13 @@ $(document).ready(function() {
             columnNumb = 1;
 
 
-        if (winWidth > 1024) {
-            columnNumb = 4;
-        } else if (winWidth > 900) {
+        if (winWidth >= 1920) {
             columnNumb = 2;
-        } else if (winWidth > 479) {
+        } else if (winWidth >= 1440 ){
+            columnNumb = 3;
+        } else if (winWidth >= 960 ){
             columnNumb = 2;
-        } else if (winWidth < 479) {
+        } else{
             columnNumb = 1;
         }
 
