@@ -136,12 +136,12 @@ a, a:hover, a:active {
 /***** Oscar *****/
 /*---------------*/
 
-/* figure.effect-oscar {
-	background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
-	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%);
-    background: #ffffff00;
-	background: #ffffff00;
-} */
+figure.effect-oscar {
+	/* background: -webkit-linear-gradient(45deg, #22682a 0%, #9b4a1b 40%, #3a342a 100%);
+	background: linear-gradient(45deg, #22682a 0%,#9b4a1b 40%,#3a342a 100%); */
+    background: #fff;
+	background: #fff;
+}
 
 figure.effect-oscar img {
 	opacity: 1.0;
